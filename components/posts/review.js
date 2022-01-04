@@ -10,6 +10,7 @@ import RepostIcon from '../repost'
 import CommentIcon from '../comment'
 import ProfilePic from '../profile'
 import  {Divider} from 'react-native-elements'
+import AtName from '../atName'
 
 
 
@@ -24,10 +25,14 @@ export default function ReviewPost(props){
             <View style = {styles.topContainer}>
                 <View style={styles.nameContainer}>
                     <View style = {styles.proPicContainer}>
-                        <ProfilePic/>
+                        <ProfilePic width={30} height={30}/>
                     </View>
                     
-                    <UserName username = 'Enoch Daywalker' fontSize = {25} fontWeight='bold'/>
+                    <View style = {styles.usernameContainer}>
+                        <UserName username = 'Enoch Daywalker' fontSize = {20} fontWeight='normal'/>
+                        <View style={{top: -5}}><AtName atName = 'francis'/></View>
+                    </View>
+                    
                     
                 </View>
                 
@@ -101,6 +106,7 @@ const styles = StyleSheet.create({
         marginBottom: 3,
         marginTop:1,
         marginRight: 3,
+        marginLeft: 30
 
     },
 
@@ -123,7 +129,12 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         borderRadius: 5,
         borderWidth: 1,
-        borderColor: 'gray'
+        borderColor: 'gray',
+        marginLeft: 30,
+        marginTop: 5,
+        marginBottom: 5
+        
+        
 
         
         
@@ -141,6 +152,7 @@ const styles = StyleSheet.create({
     },
     bottomContainer: {
         marginBottom: 1,
+        marginLeft: 30
     },
     ratedEntity: {
         flexDirection: 'column',
@@ -149,8 +161,12 @@ const styles = StyleSheet.create({
     },
     ratingView: {
         flexDirection: 'column',
-        marginLeft: 2,
+        marginLeft: 3,
         
+        
+    },
+    usernameContainer : {
+        flexDirection: 'column'
     }
     })
 
