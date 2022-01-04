@@ -2,9 +2,12 @@ import * as React from 'react'
 import RepostIcon from '../repost'
 import { getDeviceHeight, getDeviceWidth } from '../../libraries/deviceDimensions'
 import { Image, Text, View, StyleSheet } from 'react-native'
-import VideoPlayer from 'react-native-video-player'
 import video from '../../assets/burn_video.mp4'
-
+import ProfilePic from '../profile'
+import UserName from '../username'
+import Verified from '../verified'
+import AtName from '../atName'
+import  {Divider} from 'react-native-elements'
 
 
 
@@ -17,6 +20,18 @@ export default function ReevPost(props){
         //text with pictures and videos
         return(
             <View style={styles.postContainer}>
+                <View style={styles.nameContainer}>
+                    <View style = {styles.proPicContainer}>
+                        <ProfilePic width={30} height={30}/>
+                    </View>
+                    
+                    <View style = {styles.usernameContainer}>
+                        <UserName username = 'Enoch Daywalker' fontSize = {20} fontWeight='normal'/>
+                        <View style={{top: -5}}><AtName atName = 'francis'/></View>
+                    </View>
+                    
+                    
+                </View>
                 <View style={styles.textContainer}>
                     <Text >
                         {props.reevText}
@@ -26,19 +41,16 @@ export default function ReevPost(props){
 
                 <View style={styles.imageContainer}>
                     
-                        <Image source={require('../../assets/burnt_phone.jpg')} height={40} width={40}/>
+                        <Image source={require('../../assets/burnt_phone.jpg')} style={{resizeMode:'cover', height:'100%', width:'110%', }}/>
                     
                 </View>
                 
                 <View style={styles.videoContainer}>
-                <VideoPlayer
-                    video={require('../../assets/burn_video.mp4')}
-                    videoWidth={300}
-                    videoHeight={300}
-                    
-                />
+                
                 </View>
+                 <Divider orientation='horizontal'/>
             </View>
+           
         )
         
     }
@@ -72,9 +84,11 @@ const styles = StyleSheet.create({
     },
 
     imageContainer: {
-        height: 30,
-        width: 30,
+        
+        height: 170,
+        width: 280,
         borderRadius: 1,
+        marginLeft: 30,
 
     },
 
@@ -88,7 +102,14 @@ const styles = StyleSheet.create({
         height: 20,
         width:200,
         borderRadius: 1,
-    }
+        marginLeft: 30,
+    },
+    nameContainer: {
+        flexDirection: 'row'
+    }, 
+    proPicContainer: {
+        flexDirection: 'column'
+    },
 
 
 })

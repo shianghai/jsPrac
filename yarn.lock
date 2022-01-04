@@ -11016,7 +11016,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@*", "prop-types@^15.5.6", "prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.5.6", "prop-types@^15.6.0", "prop-types@^15.6.2", "prop-types@^15.7.2":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -11353,7 +11353,7 @@
     "eventemitter3" "^1.1.1"
     "url" "^0.11.0"
 
-"react-native-vector-icons@>= 2.1.0", "react-native-vector-icons@>7.0.0":
+"react-native-vector-icons@>7.0.0":
   "integrity" "sha512-qKX5d5/TafHmI4B7UOSZCL3BAGh7ZfF30iLwRgxBkKfZl2lKSuHp8Ottj9OyWh9b5fFtlg+LtyvZrns3g2kh+w=="
   "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-9.0.0.tgz"
   "version" "9.0.0"
@@ -11374,12 +11374,7 @@
   dependencies:
     "lodash" "^4.16.4"
 
-"react-native-video-player@^0.12.0":
-  "integrity" "sha512-7h288hwlvjxxBOJ1UOoUctW8auPyq22Lxltc1FIxSJAF/tYyPcnBxAtaWOxI7CGflRn51BLVlUTclXC4CB3BZA=="
-  "resolved" "https://registry.npmjs.org/react-native-video-player/-/react-native-video-player-0.12.0.tgz"
-  "version" "0.12.0"
-
-"react-native-video@^2.0.0", "react-native-video@^5.2.0", "react-native-video@>=2.0.0":
+"react-native-video@^5.2.0", "react-native-video@>=2.0.0":
   "integrity" "sha512-5SK1lxyzrCkZF+WuxUxLR1Pt65E0rsWB1w1GrGxSLdC9zWYBumcmuHl+wPJ7UQvznjaH2Ze7uU1R3arejI7+WQ=="
   "resolved" "https://registry.npmjs.org/react-native-video/-/react-native-video-5.2.0.tgz"
   "version" "5.2.0"

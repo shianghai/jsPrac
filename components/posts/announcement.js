@@ -10,6 +10,7 @@ import RepostIcon from '../repost'
 import CommentIcon from '../comment'
 import ProfilePic from '../profile'
 import  {Divider} from 'react-native-elements'
+import AtName from '../atName'
 
 
 
@@ -22,14 +23,15 @@ export default function AnnouncementPost(props){
             <View style = {styles.topContainer}>
                 <View style={styles.nameContainer}>
                     <View style = {styles.proPicContainer}>
-                        <ProfilePic width = {50} height={50}/>
+                        <ProfilePic width = {30} height={30}/>
                     </View>
                     
-                    <UserName username = 'shanghai Inc' fontSize = {25} fontWeight='bold'/>
+                    <UserName username = 'shanghai Inc' fontSize = {20} fontWeight='normal'/>
                     <Verified/>
                 </View>
-                
+                 
                 <View style={styles.ratingContainer}>
+                    <View style = {{marginRight: 1, top: -1}}><AtName atName = 'windows'/></View>
                     <StarRating starRating = {5} starSize={10}/>
                     <NumberRating numberRating = {'5.0/5.0'} numberSize = {10}/>
                 </View>
@@ -91,6 +93,7 @@ const styles = StyleSheet.create({
         
         marginTop:1,
         marginRight: 3,
+        marginLeft: 30
 
     },
 
@@ -111,8 +114,8 @@ const styles = StyleSheet.create({
 
     ratingContainer: {
         flexDirection: 'row',
-        left: 50,
-        top: -27,
+        left: 30,
+        top: -15,
         
         
         
@@ -131,6 +134,7 @@ const styles = StyleSheet.create({
     },
     bottomContainer: {
         marginBottom: 1,
+        marginLeft: 30
     }
     })
 
